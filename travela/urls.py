@@ -17,8 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from travelaApp.views import home
+from travelaApp.views import home,login,logout,profile,findUser,findStudent,checkWebsite
 
 urlpatterns = [
     path('',home,name="home"),
+    path('login/',login,name="login"),
+    path('logout/',logout,name="logout"),
+    path('profile/',profile,name="profile"),
+    path('findUser/',findUser,name="findUser"),
+    path('findStudent/',findStudent,name="findStudent"),
+    path('checkWebsite/',checkWebsite,name="checkWebsite"),
 ]
